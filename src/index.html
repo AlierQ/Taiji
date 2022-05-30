@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>太极图</title>
+</head>
+<style>
+    
+    body{
+        background: #eee;
+    }
+    #taiji{
+        position:fixed;
+        top:60px;
+        left:50%;
+        transform:translateX(-50%);
+        background: #fff;
+    }
+
+    #demo{
+        font-size: 16px;
+        font-weight: bold;
+        background: #333;
+        width: 400px;
+        color: #8B7765;
+        padding-left: 10px;
+    }
+
+    #content{
+        position: fixed;
+        height: 98vh;
+        color: #333;
+        overflow: auto;
+    }
+
+    /* 媒体查询，手机端更换布局 */
+    @media (max-width:500px) {
+        *{padding: 0;margin: 0;}
+        #demo{
+            font-size: 16px;
+            font-weight: bold;
+            color: #9e856f;
+            overflow: scroll;
+        }
+        #content{
+            position: fixed;
+            width: 100vh;
+            margin-top: 400px;
+            height: 440px;
+            bottom: 0;
+            color: #333;
+            overflow: auto;
+        }
+    }
+</style>
+<style id="style"></style>
+<body>
+    <div id="content">
+        <div id="demo"></div>
+    </div>
+    <div id="taiji"></div>
+</body>
+<script src="./main.js"></script>
+</html>
