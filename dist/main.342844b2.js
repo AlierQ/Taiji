@@ -131,8 +131,8 @@ var step = function step() {
         if (n < string.length - 1) {
             step();
         }
-    }, 10);
+    }, 60);
 };
 step();
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.67b347e6.map
+//# sourceMappingURL=main.342844b2.map
